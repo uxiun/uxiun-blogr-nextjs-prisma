@@ -43,7 +43,7 @@ const Post: React.FC<PostProps> = (props) => {
     return <div>Authenticating ...</div>;
   }
   const userHasValidSession = Boolean(session);
-  const postBelongsToUser = session?.user?.email === props.author?.email;
+  const postBelongsToUser = session?.user?.name === props.author?.name;
 
 
   let title = props.title
